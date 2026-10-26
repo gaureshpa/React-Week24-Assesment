@@ -1,0 +1,102 @@
+.balance-card {
+    padding: 24px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+
+.balance-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.balance-card__icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #10d05a;
+    background-color: #eafbf0;
+    border-radius: 10px;
+}
+
+.balance-card__icon svg {
+    width: 23px;
+    height: 23px;
+}
+
+/* Casual Leave */
+.balance-card__icon[data-leave-type='casual'] {
+    color: #10d05a;
+    background-color: #eafbf0;
+}
+
+/* Sick Leave */
+.balance-card__incon[data-leave-type='sick'] {
+    color: #2196d2;
+    background-color: #eaf6ff;;
+}
+
+.balance-card__title {
+    margin-bottom: 16px;
+    color: var(--color-text-muted);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.balance-card__remaining {
+    margin-bottom: 4px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+.balance-card__remaining span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.balance-card__total,
+.balance-card__used {
+    color: var(--color-text-muted);
+    font-size: 13px;
+}
+
+.balance-card__progress {
+    height: 6px;
+    margin: 18px 0 8px;
+    overflow: hidden;
+    background-color: #e5e7eb;
+    border-radius: 999px;
+}
+
+.balance-card__progress-fill {
+    height: 100%;
+    background-color: var(--color-primary);
+    border-radius: inherit;
+    transition: width 0.3s ease;
+}
+
+.balance-card__used {
+    font-size: 12px;
+}                                                                                       
+
+.balance-card__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remaining-percentage {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 14px;
+}
+

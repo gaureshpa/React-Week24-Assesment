@@ -1,0 +1,69 @@
+.leave-balance {
+    margin-top: 32px;
+}
+
+.leave-balance__heading {
+    margin-bottom: 20px;
+}
+
+.leave-balance__heading h2 {
+    margin-bottom: 4px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.leave-balance__heading p {
+    color: var(--color-text-muted);
+    font-size: 14px;
+}
+
+.leave-balance__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.leave-balance__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.leave-balance__icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.leave-balance__icon--annual {
+    color: #00843d;
+    background-color: #effcf4;
+    border-color: #ffdada;
+}
+
+.leave-balance__icon--sick {
+    color: #dc2626;
+    background-color: #fff1f1;
+    border-color: #ffedb5;
+}
+
+.leave-balance__icon--casual {
+    color: #c45a00;
+    background-color: #fffaeb;
+    border-color: #ffedb5;
+}
+
+@media (max-width: 768px) {
+    .leave-balance__grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .leave-balance__grid {
+        grid-template-rows: 1fr;
+    }
+}

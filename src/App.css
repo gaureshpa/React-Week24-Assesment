@@ -1,0 +1,35 @@
+.app_main {
+    padding: 16px;
+    margin-inline: 24px;
+}
+
+.request_section {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+
+    .request_section {
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 486px) {
+    .request_section {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .request_section * {
+        min-width: 0;
+        box-sizing: border-box;
+    }
+}
