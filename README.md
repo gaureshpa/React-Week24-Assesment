@@ -1,32 +1,54 @@
-# React + TypeScript + Vite
+# LeaveFlow: Employee Leave Request UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive employee leave management interface built with React and TypeScript. Employees can view their leave balances, submit leave requests, and track their request statuses.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Leave balance cards for different leave types.
+- Leave request form with input validation.
+- Voew leave requests and their statuses. 
+- Filter requests by status: Pending, Approved and Rejected.
+- Responsive layout for desktop and mobile screens.
+- Accessible components and interactive elements.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- Vite
+- CSS
 
-## Expanding the Oxlint configuration
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Getting Started
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+### Prerequisites
+
+- Node.js
+- npm
+
+## Installation
+
+```bash
+git clone https://github.com/gaureshpa/React-Week24-Assesment
+cd leaveflow
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Open the local URL displayed in your terminal to view the application.
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Header.tsx
+│   ├── LeaveBalanceCard.tsx
+│   ├── LeaveRequestCard.tsx
+│   ├── RequestForm.tsx
+│   └── MyRequests.tsx
+├── App.tsx
+├── index.css
+└── main.tsx
+```
+
