@@ -6,7 +6,7 @@ A responsive employee leave management interface built with React and TypeScript
 
 - Leave balance cards for different leave types.
 - Leave request form with input validation.
-- Voew leave requests and their statuses. 
+- View leave requests and their statuses. 
 - Filter requests by status: Pending, Approved and Rejected.
 - Responsive layout for desktop and mobile screens.
 - Accessible components and interactive elements.
